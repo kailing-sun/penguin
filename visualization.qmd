@@ -1,0 +1,34 @@
+---
+title: "palmer' Penguins"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+penguins
+```
+
+```{r}
+penguins %>%
+  ggplot() +
+  geom_density(mapping = aes(x = bill_length_mm, fill=species), alpha=0.5)
+```
+
+
+
+```{r}
+ggplot(data = penguins) +
+geom_point(mapping = aes(x = flipper_length_mm , y = body_mass_g, color = species))
+```
+
+```{r}
+penguins %>%
+ggplot() + 
+  geom_point(mapping = aes(x = body_mass_g,y = bill_depth_mm, color = sex)) +
+  facet_wrap(~ island)
+```
