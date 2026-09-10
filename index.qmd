@@ -1,7 +1,33 @@
 ---
-title: "penguin"
+title: "My Penguin Website"
 ---
 
-This is a Quarto website.
+# Welcome!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Welcome to my penguin data visualization website!
+
+In this project, I use the `penguins` dataset to explore
+different characteristics of penguins using R and `ggplot2`.
+
+I will focus on body size, bill characteristics, species,
+sex, and island.
+
+## About the data
+
+The `penguins` dataset contains information about penguins
+from three different species and several islands.
+
+The main variables I use include:
+
+- body mass
+- flipper length
+- bill length
+- bill depth
+- sex
+- species
+- island
+
+## Goal
+
+The goal of this project is to use data visualization to
+better understand patterns and differences among penguins..

@@ -1,0 +1,22 @@
+---
+title: "multiple_traits"
+editor: visual
+---
+# Exploring Multiple Traits
+
+In this section, I explore the relationship between body mass
+and flipper length.
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+
+penguins %>%
+  ggplot() +
+  geom_point(
+    aes(
+      x = body_mass_g,
+      y = flipper_length_mm,
+      color = species
+    )
+  )
