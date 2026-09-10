@@ -28,7 +28,11 @@ geom_point(mapping = aes(x = flipper_length_mm , y = body_mass_g, color = specie
 
 ```{r}
 penguins %>%
-ggplot() + 
-  geom_point(mapping = aes(x = body_mass_g,y = bill_depth_mm, color = sex)) +
+  ggplot() + 
+  geom_point(mapping = aes(
+    x = body_mass_g,
+    y = bill_depth_mm,
+    color = sex
+  )) +
   facet_wrap(~ island)
 ```
